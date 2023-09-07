@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js的数组</title>
+    <script>
+        /*
+            数组：
+                概念：存储数据的容器就是数组
+                特点：拥有下标，下标从零开始
+                创建：
+                    var a = [数据1，数据2，数据3，……]；该方式直接写数据
+                    var b = new Array(数据1，数据2，数据3，……);该方式直接写数据
+                    var c = new Array(n);该方式声明了一个数组，可以存放n个元素
+                    var d = new Array();该方式只是声明了一个数组
+        */
+
+        var a = [10,"hello",true];
+        //查看数组的长度 length
+        alert(a.length);
+        //查看数据的具体元素[n]
+        alert(a[1]);//hello
+
+        //如何遍历数组b中的数据
+        var b = [1,22,6,8,12,3];
+        for(var i=0; i<6; i++){
+            alert(b[i]);//i 本身是自增
+        }
+
+        //如何判断数组中的数据是不是水仙花数
+        /*
+            1：通过循环得到每一个数字，然后才能对每一个数字进行判断
+            2：获取数字的百位，十位，个位上的每一个数字
+            3：计算百十个位上的数字的立方和
+            4：立方和是否等于自身
+        */
+       var c = [100,153,231,370,888];
+       var g,s,b;
+
+       for(let i=0;i<5 ;i++){
+        b=c[i]/100;
+        s=c[i]%100/10;
+        g=c[i]%10;
+
+        let sum = b*b*b+s*s*s+g*g*g;
+
+        if(sum==c[i]){
+            alert(c[i]+"是水仙花数");
+        }else{
+            alert(c[i]+"不是水仙花数");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

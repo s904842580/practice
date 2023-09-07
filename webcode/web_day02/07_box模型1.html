@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box模型</title>
+    <style>
+        #d1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /* 内边距：内容到边框的距离，特点是设置内边距会影响该元素的整体大小 */
+            padding-left: 10px;
+        }
+        #d2{
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            /* 外边框：边框到边框之间的距离 */
+            /* margin：10px */
+            /* 特殊用法，设置整个元素居中 */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">中</div>
+    <div id="d2">国</div>
+</body>
+</html>

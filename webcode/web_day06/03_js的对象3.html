@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js的数组</title>
+    <script>
+        //该函数表示接受两个数据,然后两个数据进行大小比较，并且将结果返回给sort函数
+        function px(x,y){
+            return x.length - y.length;
+        }
+
+        //reverse() 数组的倒序 
+        var a = [1,23,8,12,5];
+        //alert(a.reverse());
+        
+        //sort() 数组的排序
+        var b = [2,22,1,8,18];
+        alert(b.sort(px));
+
+        var c = ["苍老师","小泽老师","邱洁"];
+        alert(c.sort(px));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

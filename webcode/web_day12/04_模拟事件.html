@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模拟事件</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            $("input[type='button']").click(function(){
+                //计算文本框有多少个
+                let num = $("input[type='text']").length;
+
+                //定义一个index，用来就是定时器执行的次数
+                let index = 0;
+                //设计定时器
+                let clear_num = setInterval(function(){
+                    index++;
+                    if(num == index){
+                        //结束定时器
+                        clearInterval(clear_num);
+                    }
+                    //生成一个分数
+                    let sorce = Math.ceil(Math.random()*100)//ceil向上取整
+                    //聚焦时打分
+                    $(":text").eq(index-1).trigger("focus").val(sorce);//
+
+                },1000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <p><input type="button" value="自动打分"/></p>
+    张三：<p><input type="text"></p>
+    李四：<p><input type="text"></p>
+    王五：<p><input type="text"></p>
+    赵六：<p><input type="text"></p>
+    前妻：<p><input type="text"></p>
+</body>
+</html>

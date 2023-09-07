@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偏移效果</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            $("div").click(function(){//animate通过高度和宽度改变
+                $("div").animate({"height":"500px"},3000,function(){alert("完成了")})
+
+            })
+        })
+    </script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

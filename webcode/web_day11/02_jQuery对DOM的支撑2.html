@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery对DOM的支撑</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            /*
+                obj.val();获取value属性值
+                obj.val("2");设置value的属性值是xxx
+            */
+            // alert($("button").val());
+            // $("button").val("2")
+
+            /*
+                obj.attr("xxx");根据xxx的属性名获取其属性值
+                obj.attr("xxx","yyy");设置属性名xxx的值为yyy
+            */
+
+            alert($("p").attr("style"));
+            $("p").attr("style","color:pink");
+        })
+    </script>
+</head>
+<body>
+    <button value="1" style="color:red">按钮</button>
+    <p style="color: blueviolet;">金陵十三钗</p>
+</body>
+</html>

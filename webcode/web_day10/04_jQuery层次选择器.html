@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery层次选择器</title>
+    <script src="jquery.js"></script>
+    <script>
+        /*
+            层次选择器：
+                1：后代选择器 $(select1 select2)
+                2：子选择器   $(select1 > select2)
+                3：选中下一个弟弟 $(select1 + select2)
+                4：选择所有的弟弟 $(select1 ~ select2) 注在版本jQuery2之前用
+        */
+       $(function(){
+            //$("ul li")
+            //alert($("ul>li").length);
+            alert($("ul + #sh"));
+            //alert($("li + #sh"));//选中天津市
+       });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>北京市</li>
+        <li id="sh">上海市</li>
+        <li>天津市</li>
+        <li>重庆市</li>
+    </ul>
+</body>
+</html>

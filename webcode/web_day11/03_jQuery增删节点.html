@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        /*
+            添加节点：
+                1：创建一个节点
+                2：添加节点
+                    a.parent.append(obj);作为最后一个孩子添加
+                    b.parent.prepend(obj);作为第一个孩子添加
+                    c.brother.after(obj);作为brother的弟弟添加
+                    d.brother.before(obj);作为brother的哥哥添加
+            删除节点：
+                a. obj.remove();
+                b. obj.empty();
+        */
+       $(function(){
+            let $li = $("<li style='color:red'>清华<li>");
+            //$("ul").prepend($li);
+            //$("#xd").after($li);
+            //$("ul").empty();
+            //$("li").remove();
+            $("li[id]").html()
+
+       })
+    </script>
+</head>
+<body>
+    <ul>
+        <li>成电</li>
+        <li id="xd">西电</li>
+        <li>杭电</li>
+        <li>桂电</li>
+    </ul>
+</body>
+</html>

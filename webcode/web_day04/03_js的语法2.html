@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js的语法</title>
+    <script>
+        /*
+            js的数据类型
+                String：表示字符串
+                Number：表示数字
+                Boolean：表示判断的结果 true false。可以参与运算，true=1 false=0，前提是和number参与运算
+
+
+        */
+       let name = "法外狂徒张三";
+       let age = 18;
+       let girlfriend = true;
+
+       let a = 10;
+       let b = true;
+       alert(a+b);
+
+       //字符串不能转化为数字 parenInt() 若被转换的内容不是数字，则弹出NaN(not a number)
+       let e = "5";
+       let f = parseInt(e);
+       alert(f+1)
+
+       let g = "abc";
+       let h = parseInt(g);
+       alert(h);
+
+       //将其他类型转换为字符串 toString()
+       let i = 10;
+       let j = i.toString();
+       alert(j+10);
+
+        //查看当前的数据类型typeOf()
+        let k = "qwer";
+        //let l = typeOf(k)
+        alert(typeof(k));
+
+        //判断是不是一个数 "a" is not a number
+        alert(isNaN("a"));
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

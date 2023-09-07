@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周期性定时器</title>
+    <script>
+         /*
+            周期性定时器：按照一定的间隔事件，重复执行某些内容
+            setInterval(参数1，参数2);
+                参数1：要做的事件
+                参数2：表示间隔时间，单位是毫秒
+       */
+        /*
+            作用域：定义的变量作用范围是包围自己的一个大括号内
+        */
+
+    let stopId;
+        function start(){
+            let stopId = setInterval(f,1000);
+        }
+        function end(){
+            clearInterval(stopId);
+        }
+        function f(){
+            //1:获取input框
+            let k = document.getElementById("ik");
+            //2：获取时间
+            let time = new Date();
+            let sj = time.toLocaleDateString();
+            //3：将时间赋值给文本框
+            k.value = sj;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="ik"><br>
+    <input type="button" value="开始" onclick="start()">
+    <input type="button"value="暂停" onclick="end()">
+</body>
+</html>

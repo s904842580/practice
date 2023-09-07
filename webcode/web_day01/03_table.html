@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        table：该标签表示表格
+            tr：该标签表示行
+            td：该标签表示列
+     -->
+     <!-- 
+        table:
+            border：该属性表示边框
+            width：该属性表示表格的宽度
+            height：该属性表示表格的高度
+            ailgn：该属性表达表格的位置 ailgn="center\left\right"
+            cellpadding：单元格与内容之间的距离
+            cellspacing：单元格与单元格之间的距离
+        tr：
+            ailgn：该属性表示tr的内容的位置
+        td：
+            rowspan：跨行，一般是上面的标签跨行
+            colspan：跨列，
+
+      -->
+      <!-- 
+        thead：该标签表示表头
+        tbody：该标签表示表的核心内容
+        tfoot：该标签表示表尾
+       -->
+    <table border="1px" width="30%">
+        <thead>
+            <tr align="center"><th>编号</th><th>名称</th><th>金额</th></tr>
+        </thead>
+        <tbody style="color: red;">
+            <tr><td>001</td><td>鼠标</td><td>50</td></tr>
+            <tr><td>001</td><td>鼠标</td><td>50</td></tr>
+        </tbody>
+        <tfoot style="color: red;">
+            <tr><td colspan="2">合计</td><td>150</td></tr>
+        </tfoot>
+    </table>
+      <table border="1px">
+        <tr>
+            <td rowspan="2">aaa</td>
+            <td>bbb</td>
+        </tr>
+        <tr>
+            <!-- <td>ccc</td> -->
+            <td>ddd</td>
+        </tr>
+      </table>
+     <table border="1xp soild red" width="500px" height="300px" align="center"> 
+        <tr>
+            <td>法正</td>
+            <td>李严</td>
+        </tr>
+        <tr>
+            <td>贾诩</td>
+            <td>曹真</td>
+        </tr>
+     </table>
+</body>
+</html>

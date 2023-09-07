@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        :link{
+            color: red;
+        }
+        :visited{
+            color: yellow;
+        }
+        #i1:hover{
+            background-color: greenyellow;
+        }
+        #i2:active{
+            background-color: blue;
+        }
+        #i3:focus{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        :link 向没有访问过的超链接添加样式
+     -->
+     <a href="http://www.jd.com">京东</a>
+     <!-- 
+        :visited 向已经访问过的超连接添加样式
+      -->
+      <a href="http://www.taobao.com">淘宝</a>
+      <!-- 
+        :hover 当鼠标悬停时添加样式
+       -->
+       <input id="i1" type="button" value="按钮">
+       <!-- 
+        :active 向被激活的元素添加样式
+        -->
+        <input id="i2" type="button" value="按钮2"><br>
+        <!-- 
+            :focus 向获取焦点的元素添加样式
+         -->
+        <input id="i3" type="text" >
+</body>
+</html>

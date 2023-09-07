@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一次性定时器</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        /*
+            一次性定时器：在间隔一定时间后，执行一次
+                let result = setTimeout(参数1，参数2);
+        */
+       //setTimeout("alert(222)",2000);
+       setTimeout(f,5000);
+       function f(){
+            document.getElementById("d").style.display="none";
+       }
+
+    </script>
+</head>
+<body>
+    <div style="display: block;" id="d"></div>
+</body>
+</html>

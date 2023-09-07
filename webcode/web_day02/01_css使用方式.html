@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css的使用方法</title>
+    <style>
+        h3{
+            color: red;
+            font-size: 60px;
+        }
+    </style>
+    <!-- link标签用于引入文件，rel type等属性是固定格式 -->
+    <link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+    <!-- 
+        css：层叠样式表，即给html化妆
+        style：用来设置样式，设置样式用;隔开
+     -->
+     <!-- 内联方式，定义在标签的内部 -->
+     <p style="color: red;font-size:50px">内联方式，定义在标签的内部</p>
+     <!-- 内部样式，定义在网页内部的样式 -->
+     <h3>今天周二</h3>
+     <!-- 外部样式,独立与html文件，需要创建一个独立css文件
+            引入css文件，在head中使用link标签引入<link rel="stylesheet" type="text/css" href="demo.css">
+     -->
+     <span>
+        外部样式,独立与html文件,需要创建一个独立css文件
+     </span>
+</body>
+</html>

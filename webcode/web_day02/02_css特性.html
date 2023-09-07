@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css特性</title>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <style>
+        span{
+            color: green;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 继承性，父标签的样式可以传递给子标签 -->
+    <div style="color:red">
+        <p>我是p元素</p>
+        <h3>我是三级标题</h3>
+    </div>
+    
+    <!-- 层叠性：若一个元素存在多个样式，在不冲突的前提下可以叠加 -->
+    <span style="color: rgb(255, 255, 0);">层叠性：一个元素存在多个样式，在不冲突的前提下可以叠加</span>
+    
+    <!-- 优先级：若样式存在冲突，则遵循就近原则 -->
+    <h2 style="color: palevioletred;">我是二级标题</h2>
+</body>
+</html>

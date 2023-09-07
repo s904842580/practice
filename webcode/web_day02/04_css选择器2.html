@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css选择器</title>
+    <style>
+        h1,#ih{
+            color: red;
+        }
+        p span{
+            color: yellow;
+        }
+        p > span{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 选择器组：一个样式给多个元素使用 -->
+    <h1>一级标签</h1>
+    <h2 id="ih">二级标签</h2>
+    <!-- 派生选择器：后代选择器、子选择器 -->
+    <!-- 后代选择器: p span{} -->
+    <!-- 子选择器：p > span{} -->
+    <p>今天是个<span>好日子</span>，阳光明媚，<b>心<span>情</span>愉悦</b>，我和她一起去吃饭</p>
+</body>
+</html>

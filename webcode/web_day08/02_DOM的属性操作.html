@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM的属性操作</title>
+    <script>
+        /*
+            操作属性：
+                获取属性：getAttribute(属性名);
+                设置属性：setAttribute(属性名，属性值);
+                移除属性：removeAttribute(属性名);
+
+                属性操作：node.href=""; node.src="";
+                设置样式：ndode.style.样式名 = 样式值
+        */
+
+        //等待页面加载完毕后执行
+        window.onload = function(){
+            let nj = document.getElementById("nj");
+            //alert(nj.getAttribute("id"));
+            nj.setAttribute("style","color:green");
+            nj.removeAttribute("style");
+
+            document.getElementById("tb").href="http://www.jd.com";
+
+            document.getElementById("nj").style.color="yellow";
+            document.getElementById("nj").style.fontSize="50px";
+
+            document.getElementById("p").className="s";
+        }
+    </script>
+
+    <style>
+        .s{
+            color: blue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>济南</li>
+        <li id="nj" style="color: rebeccapurple;">南京</li>
+        <li>福州</li>
+        <li>杭州</li>
+    </ol>
+    <a id="tb" href="http://www.taobao.com">淘宝</a><br>
+    <p id="p">我与春风皆过客</p>
+</body>
+</html>

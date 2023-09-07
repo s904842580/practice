@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery的选择器</title>
+    <script src="jquery.js"></script>
+    <script>
+        /*
+            ：contains("xxx") 选择包含xxx内容的元素
+            ：empty 选择不含包子元素的元素 
+            ：visible 选中可见元素
+            ：hidden 选中隐藏元素
+
+            ：[attribute] 选择具有attribute属性的元素
+            ：[attribute = xx] 选择具有attribute属性，并且属性值必须等于xx
+        */
+
+        $(function(){
+            $("p:contains('周一')").css("color","red");//匹配包含周一的p
+            //alert($("p:empty").length)//匹配不包含一周的p
+            $("h2:visible").css("color","blue");
+            $("h2:hidden").css("color","yellow");
+
+            $("li[id]").css("color","red");
+            $("li[class=dx]").css("color","green")
+
+            $(":password").css("color","red");
+            $(":text").css("color","green")
+        });
+</script>
+<body>
+    <p id="p1">今天周一是个好日子</p>
+    <p id="p2">明天周二也是个好日子</p>
+
+    <h2>二级标题</h2>
+
+    <ul>
+        <li id="su">山东大学</li>
+        <li>山西大学</li>
+        <li class="dx">河南大学</li>
+        <li class="dx">广西大学</li>
+        <li>东北大学</li>
+    </ul>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="password">
+    </form>
+</body>
+</html>

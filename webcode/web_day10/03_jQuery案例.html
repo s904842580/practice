@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery案例</title>
+    <script src="jquery.js"></script>
+    <script>
+        function big(){
+            //1:获取当前字体的大小
+            let size = $("p").css("font-size")//16px
+            //2：将16px中的px去掉
+            let num = size.replace("px","");//16 String
+            //3：将string类型转换为number
+            let num_1 = parseInt(num);//16 number
+            //4：将num_1加上5，然后设置回去
+            $("p").css("font-size",(num_1+5)+"px");
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">看我变大</p>
+    <button onclick="big()">变大</button>
+</body>
+</html>

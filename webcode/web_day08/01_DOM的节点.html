@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM的节点</title>
+    <script>
+        /*
+            NodeName：节点名称
+            NodeType：节点类型
+            
+            innerHTML/innerText：用来获取或则设置节点的内容。区别是innerHTML可以获取文本中的标签，innerText只能获取文本
+            在设置内容时，innerHTML可以识别标签，innerText不能识别标签
+
+            注意：js程序是从上向下执行，加载script时，不一定会加载body中的内容
+                解决方法1：将script移到body后
+                解决方法2：等待页面加载完毕后执行script
+                    window.onload = function(){
+                        该处内容会在加载完毕后加载(刷新)
+                    }
+        */
+
+        window.onload=function(){
+            //根据id获取元素
+            let node_name = document.getElementById("sh");
+            alert(node_name.nodeName);//Li
+            alert(node_name.nodeType);//1 元素节点
+            alert(node_name.innerHTML);//上海 获取元素的节点内容
+            alert(node_name.innerText);//上海
+
+            node_name.innerHTML = "杭州";
+        }
+        
+    </script>
+</head>
+<body>
+    <ol>
+        <li>北京</li>
+        <li id="sh">上海</li>
+        <li>广州</li>
+        <li>深圳</li>
+    </ol>
+</body>
+</html>

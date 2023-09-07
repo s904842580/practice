@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery的过滤选择器</title>
+    <script src="jquery.js"></script>
+    <script>
+        /*
+            过滤选择器：
+                xxx：first 选择第一个
+                xxx：last  选择最后一个
+                xxx：even 选择偶数个
+                xxx：odd 选择奇数个
+                xxx：eq(index) 选择下标等于index的
+                xxx：gt(index) 选择下标大于index的
+                xxx：lt(index) 选择下标小于index的
+                xxx：not(select) 选择排序select的所有
+        */
+       $(function(){
+        let $li = $("li:first");
+        //alert($li[0].innerHTML);//南昌
+
+        let $li2 = $("li:last");
+        //alert($li2[0].innerHTML);//贵阳
+
+        let $li3 = $("li:even");
+        alert($li3.length);//4 下标从0开始所以七个元素有4个偶数
+        for(let i = 0;i<$li3.length;i++){
+            alert($li3[i].innerHTML)
+        }
+
+        $("li:eq(2)").css("color","red");
+        $("li:gt(3)").css("color","green");
+        //$("li:not(#wh)").css("color","pink");
+
+       });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>南昌</li>
+        <li>广州</li>
+        <li>武汉</li>
+        <li>南宁</li>
+        <li>成都</li>
+        <li>昆明</li>
+        <li>贵阳</li>
+    </ul>
+</body>
+</html>

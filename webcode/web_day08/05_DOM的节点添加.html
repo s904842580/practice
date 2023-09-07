@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            节点的添加操作
+                1.创建新的节点
+                    let li = document.creatElement("节点名")
+                    li.value = "暴击"
+                    li.type = "text"
+                    li.style.color = "black"
+                    
+                2.添加节点：
+                    方式一：父节点.apppendChild(新节点)；将新节点作为父节点的最后一个孩子添加
+                    方式二：父节点.insertBefore(新节点，参照节点)；将新节点添加到参照节点之前
+                
+                3.删除节点：
+                    父节点.removeChild(子节点)
+        */
+                    window.onload=function(){
+                        let li = document.createElement("li")
+                        li.innerText= "暴击"
+                       
+                        li.style.color = "red"
+
+                        // alert(document.getElementsByTagName("ol")[0].appendChild(li))
+                        
+                        let aq=document.getElementById("aq");
+                        document.getElementsByTagName("ol")[0].insertBefore(li,aq);
+                        
+                        document.getElementsByTagName("ol")[0].removeChild(aq);
+                    }
+    </script>
+</head>
+<body>
+    <ol>
+        <li>武威</li>
+        <li id="aq">爱情</li>
+        <li>孤王</li>
+        <li>九曲</li>
+    </ol>
+    <ol></ol>
+</body>
+</html>

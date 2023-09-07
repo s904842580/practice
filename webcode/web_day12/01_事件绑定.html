@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+
+        //$("button").bind("click",f());//事件绑定
+
+        /*
+            jQuery事件绑定：
+                $obj.bind("事件类型",执行函数);
+                $obj.事件类型(执行函数);
+
+                获取事件源:e
+                    e.target:[object HTMLButtonElement],触发该事件的什么元素，返回值是DOM对象
+                    获取鼠标点击的坐标：
+                        e.pageX:获取触发事件的x坐标
+                        e.tageY:获取触发事件的y坐标
+
+                $obj.click(fuction(e)){
+                    
+                }
+        */
+        $(function(){
+            $("button").click(function(e){
+                //alert(e.target);
+                alert(e.pageY)
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <button>按钮1</button>
+</body>
+</html>

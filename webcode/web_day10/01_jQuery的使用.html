@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery的使用</title>
+    <!-- 
+        使用jQuery的步骤
+            1：引入jQuery文件
+            2：使用选择器定位到要操作的接节点
+            3：使用jQuery的方法进行操作
+     -->
+     <script src="jquery.js"></script>
+     <script>
+
+        //等待页面加载完毕
+        $(function(){
+        //document.getElemrntsByTagName("span")[0]  -> $("span")
+        //document.getElementById("d1")   ->  $("#d1")
+        //document.getElementByClassName("p1")  ->  $(".p1")
+        //jQuery是一个DOM数组
+        $("span").css("color","red").css()
+        //document.getElementsByTagName("span")[0].style.color="red";//没有加window.onload=function(){}所以不执行
+        });
+     </script>
+</head>
+<body>
+    <div id="d1">
+        <p class="p1">第一个p元素</p>
+        <p class="p2">第二个p元素</p>
+    </div>
+    <span>我是span元素</span>
+</body>
+</html>

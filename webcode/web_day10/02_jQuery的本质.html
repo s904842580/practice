@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery的本质</title>
+    <script src="jquery.js"></script>
+    <script>
+        /*jQuery：本质上是一个DOM对象数组
+            DOM -- jQuery：$(DOM对象)  DOM到jQuery的转换 在前面加一个$
+            jQuery -- DOM: $(Obj)[x]  jQuery到DOM的转换  增加一个下标       
+        */
+        //jQuery对象和DOM对象之间如何转换
+        
+        //注意：DOM的方法和jQuery的方法不能混用
+        $(function(){
+            let ps = document.getElementsByTagName("p");
+
+            let $ps = $("p");
+
+            //alert(ps[0] === $ps[0]); true
+
+            let h2 = document.getElementById("h2");//id是唯一的
+            //h2.style.color="bule";//DOM用法
+            //h2.css("color","red");//jQuery用法
+
+            $(h2).css("color","red");
+
+            let $h2 = $("#h2");
+            $h2[0].style.color="yellow";
+
+        });
+    </script>
+</head>
+<body>
+    <p>我是第一个p</p>
+    <p>我是第二个p</p>
+    <p>我是第三个p</p>
+
+    <h2 id="h2">二级标题</h2>
+</body>
+</html>

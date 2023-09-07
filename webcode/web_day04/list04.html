@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员列表</title>
+    <style>
+        /*设置body的内外边距为0，因为body只是我们div的载体*/
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: #0EA8D8;
+        }
+        /*统一设置div的边框线*/
+        div{
+            border: 1px solid gray;
+        }
+        #logo{
+            width: 960px;
+            height: 61px;
+            margin: 0 auto;
+            background-image: url("../images/top_bg.png");
+
+            text-align: right;
+            /* 当line-height的值等于元素的高度时，文本会垂直居中 */
+            line-height: 61px;
+            /* padding-right: 40px; */
+        }
+        #logo a{
+            color: white;
+            text-decoration: none;
+            margin-right: 40px;
+            font-size: 8px;
+        }
+        #logo a:hover{
+            font-weight: bold;
+        }
+
+        #nav{
+            width: 100%;
+            height: 91px;
+            background-color: #0488BB;
+        }
+        #main{
+            width: 100%;
+            height: 410px;
+            padding-top: 10px;
+            background:url('../img/content_bg.png') repeat-x top;
+        }
+        #content{
+            width: 950px;
+            height: 390px;
+            border: 5px solid #8ac1db;
+            margin: 0 auto;
+            background-color: #e8f3f8;
+        }
+        #operate{
+            width: 910px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: right;
+            line-height: 40px;
+        }
+        #operate input{
+            background-image: url(../images/btn_bg.png);
+            color: white;
+            width: 70px;
+            height: 20px;
+        }
+        #data{
+            width: 910px;
+            height: 310px;
+            margin: 0 auto;
+        }
+        #data table{
+            width: 910px;
+            border-collapse: collapse;
+        }
+        #data table thead{
+            height: 50px;
+            background-color: bisque;
+        }
+        #data table tbody{
+            text-align: center;
+            background-color: white;
+        }
+        #data table tr td:hover{
+            font-weight: bold;
+        }
+        #pages{
+            width: 910px;
+            height: 40px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #pages a{
+            text-decoration: none;
+            color: black;
+        }
+        #pages a:hover{
+            background-color: white;
+            border: 1px solid #0488BB;
+        }
+        #footer{
+            width: 960px;
+            height: 50px;
+            margin: 0 auto;
+            background-color: #0EA8D8;
+        }
+        #footer p{
+            color: white;
+            font-size: 8px;
+            text-align: center;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- logo区 -->
+    <div id="logo">
+        <a href="#">[退出]</a>
+    </div>
+    <!-- 导航区 -->
+    <div id="nav"></div>
+    <!-- 核心区 -->
+    <div id="main">
+        <!-- 内容区 -->
+        <div id="content">
+            <!-- 操作区 -->
+            <div id="operate">
+                <input type="button" value="增加">
+            </div>
+            <!-- 数据区 -->
+            <div id="data">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox">全选</th>
+                            <th>管理员ID</th>
+                            <th>姓名</th>
+                            <th>拥有角色</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>1</td>
+                            <td>唐僧</td>
+                            <td>管理员、会计、业务员</td>
+                            <td><input type="button" value="修改"> <input type="button" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>2</td>
+                            <td>孙悟空</td>
+                            <td>管理员、会计、业务员</td>
+                            <td><input type="button" value="修改"> <input type="button" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>3</td>
+                            <td>猪八戒</td>
+                            <td>管理员、会计、业务员</td>
+                            <td><input type="button" value="修改"> <input type="button" value="删除"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>4</td>
+                            <td>沙憎</td>
+                            <td>管理员、会计、业务员</td>
+                            <td><input type="button" value="修改"> <input type="button" value="删除"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        
+                    </tfoot>
+                </table>
+            </div>
+            <!-- 分页区 -->
+            <div id="pages">
+                <a href="#">上一页</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">下一页</a>
+            </div>
+        </div>
+    </div>
+    <!-- 版权区 -->
+    <div id="footer">
+        <p>&lt;我与春风皆过客&lt;</p>
+        <p>一去二三里，烟村四五家，儿童六七个，八九十之花</p>
+    </div>
+</body>
+</html>

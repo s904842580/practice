@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM节点查询</title>
+    <script>
+        /*
+            节点查询操作：
+                1：document.getElementById("id");根据id进行查询
+                2：parentNode;查找父节点 childNodes;查找字节们  注意：这是属性不是方法没有括号
+                3：document.getElementsByTagName("tagName");根据标签名查找
+                4：document.getElementsByName("name属性名");根据name属性获取节点
+        */
+        window.onload=function(){
+            alert(document.getElementById("zf").innerHTML);
+
+            alert(document.getElementById("zf").parentNode.nodeName);
+
+            let lis = document.getElementById("zf").parentNode.childNodes;//13
+            
+            alert(document.getElementsByTagName("li")[0].innerHTML);//山东航空学院
+
+            alert(document.getElementsByName("xy")[0].innerHTML);//淄博职业技术学院
+        }
+        
+    </script>
+</head>
+<body>
+    <div>
+        <ol>
+            <li>山东航空学院</li>
+            <li>山东第二医科大学</li>
+            <li id="zf">山东政法大学</li>
+            <li>菏泽学院</li>
+            <li name="zy">淄博职业技术学院</li>
+            <li name="xy">济宁学院</li>
+        </ol>
+    </div>
+</body>
+</html>

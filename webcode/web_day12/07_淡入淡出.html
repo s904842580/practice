@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐藏和显示</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(function(){
+            $("#yc").click(function(){
+                $("div").fadeOut(2000,function(){
+                    alert("完成了")
+                })
+                
+                $("#xs").click(function(){
+                    $("div").fadeIn(2000,function(){
+                        alert("显示你个大鼻窦")
+                    })
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="xs">显示</button>
+    <button id="yc">隐藏</button>
+    <div></div>
+</body>
+</html>

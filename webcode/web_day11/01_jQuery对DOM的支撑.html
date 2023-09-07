@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        /*
+            obj.html();获取内容，包含标签
+            obj.text();获取内容，不包含标签
+
+            obj.html(xxx);设置内容，标签效果会出现
+            obj.text(xxx);设置内容，标签效果不会出现，标签会以文本的形势出现
+        */
+        $(function(){
+            alert($("p").html()) ;
+            // $("p").text();
+
+            alert($("p").html("<del>你好,南京<del>"));
+        });
+    </script>
+</head>
+<body>
+    <p>今天<b>是</b>8月8号</p>
+</body>
+</html>

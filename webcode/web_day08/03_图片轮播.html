@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片轮播</title>
+    <style>
+        .hide{
+            /* 隐藏样式 */
+            display: none;
+        }
+        .show{
+            /* 显示样式 */
+            display: block;
+        }
+    </style>
+    <script>
+        //等待页面加载完毕之后执行
+        window.onload=function(){
+            //图片轮播就要用到周期性定时器
+            setInterval(lb,1000);
+            //声明一个计数器
+            let index = 0;
+            //具体干的事情，轮播
+            function lb(){
+                //将所有的图片都隐藏
+                let lis = document.getElementsByTagName("li");//3
+                for(let i=0;i<lis.length;i++){
+                    lis[i].className = "hide";
+                }
+                index++;
+                lis[index%3].className = "show";
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li><img src="img/1.jpg" alt=""></li>
+        <li><img src="img/2.jpg" alt=""></li>
+        <li><img src="img/3.jpg" alt=""></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联动菜单</title>
+    <script>
+        var cities=[
+            ["济南市","青岛市","烟台市"],
+            ["唐山市","石家庄","沧州市"],
+            ["西安市","榆林市","咸阳市"],
+        ];
+            function f(){
+                let p = document.getElementById("province");
+                let ci = cities[p.value];
+                let c = document.getElementById("city");
+                c.innerHTML = "";
+                for(let i=0;i<ci.length;i++){
+                    let o = document.createElement("option");
+                    o.innerHTML = ci[i];
+                    c.appendChild(o);
+                }
+                
+
+            }
+    </script>
+</head>
+<body>
+    省
+    <select id="province" onchange="f();">
+        <option>请选择</option>
+        <option value="0">山东省</option>
+        <option value="1">河北省</option>
+        <option value="2">陕西省</option>
+    </select>
+    市
+    <select id="city">
+        <option value="0">请选择</option>
+    </select>
+</body>
+</html>

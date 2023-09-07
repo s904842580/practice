@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+    <script>
+        //计算两个数的和
+        /*
+            function 函数名(参数1,参数2){
+                return 参数1+参数2;
+            }
+
+            在定义的函数中，默认有一个数组 arguments
+        */
+       let result = sum(2,3);
+       function sum(a,b){
+        return a+b;
+       }
+       function sum(){
+        alert(arguments.length);
+        for(let i=0;i<arguments.length;i++){
+            alert(arguments[i]);
+        }
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
