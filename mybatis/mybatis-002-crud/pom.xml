@@ -5,23 +5,35 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>mybatis-001-introduct</artifactId>
+    <artifactId>mybatis-002-crud</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-    <!--打包方式jar-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>jar</packaging>
+
+
     <dependencies>
         <!--mybatis依赖-->
         <dependency>
-                <groupId>org.mybatis</groupId>
-                <artifactId>mybatis</artifactId>
-                <version>3.5.10</version>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.10</version>
         </dependency>
-        <!--mysql驱动依赖-->
+        <!--mysql驱动-->
         <dependency>
-                    <groupId>mysql</groupId>
-                    <artifactId>mysql-connector-java</artifactId>
-                    <version>8.0.30</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
         </dependency>
         <!--junit依赖-->
         <dependency>
@@ -30,12 +42,11 @@
             <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
-        <!--引入logback的依赖，这个日志框架实现了slf4j规范-->
+        <!--logback依赖-->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.2.11</version>
         </dependency>
     </dependencies>
-
 </project>

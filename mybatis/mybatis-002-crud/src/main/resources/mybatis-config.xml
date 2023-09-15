@@ -4,6 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <!--开启mybatis对标准日志的实现-->
+    <!--<settings>
+        &lt;!&ndash;<setting name="logImpl" value="STDOUT_LOGGING"/>&ndash;&gt;
+        &lt;!&ndash;<setting name="logImpl" value="SLF4J"/>&ndash;&gt;
+    </settings>-->
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -16,6 +22,13 @@
         </environment>
     </environments>
     <mappers>
+        <!--执行XxxMapper.xml文件的路径-->
+        <!--resource属性自动会从累的根路径下开始查找资源-->
+        <!--resource属性：从类路径当中加载资源-->
         <mapper resource="CarMapper.xml"/>
+        <!--url属性：从绝对路径当中加载资源-->
+        <!--语法格式：file:///绝对路径-->
+        <!--不建议：因为移植性差-->
+        <!--<mapper url="file:///d:/CarMapper.xml-->
     </mappers>
 </configuration>
