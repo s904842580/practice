@@ -1,0 +1,243 @@
+1.使用css有三种样式：
+	内联方式：定义在标签的内部
+	内部样式表：定义在网页内部的样式
+	外部样式,独立与html文件，需要创建一个独立css文件
+            引入css文件，在head中使用link标签引入<link rel="stylesheet" type="text/css" href="demo.css">
+2.层叠性：若一个元素存在多个样式，在不冲突的前提下可以叠加
+	优先级：若样式存在冲突，则遵循就近原则
+	继承性，父标签的样式可以传递给子标签
+3.元素选择器：直接写标签名
+  类选择器：选择时使用 点+class名字
+
+
+
+1.事件定义式、；直接在标签中写js代码 
+<input type="button" value="事件定义式" onclick="alert(111)">
+嵌入式：通过函数调用
+function xxx(){
+function:固定写法，表示该内容是一个函数
+xxx:表示函数名
+()：固定写法，表示传递的参数
+{}:表示具体的内容
+
+function f(){
+            alert(111)
+}
+<input type="button" value="嵌入式" onclick=f()>
+文件调用式：通过文件demo.js调用
+function m(){
+    alert(666);
+}
+<input type="button" value="文件调用式" onclick="m()">
+2.变量的使用规则：由数字，字母，_，$等一个或多个组成。不能以数字开头
+关键字不能作为变量名
+3.js的数据类型
+String：表示字符串
+字符串不能转化为数字 parenInt() 若被转换的内容不是数字，则弹出NaN(not a number)
+将其他类型转换为字符串 toString()
+Number：表示数字
+Boolean：表示判断的结果 true false。可以参与运算，true=1 false=0，前提是和number参与运算
+
+
+7.28
+1.js的数据类型
+String：表示字符串
+字符串不能转化为数字 parenInt() 若被转换的内容不是数字，则弹出NaN(not a number)
+将其他类型转换为字符串 toString()
+Number：表示数字
+Boolean：表示判断的结果 true false。可以参与运算，true=1 false=0，前提是和number参与运算
+2. ==：判断内容是否相等
+===：判断内容和类型是否相等
+
+7.31
+1.内置对象：String对象 Array对象 Math对象 Date对象
+2.String对象
+	toLowerCase/toUpperCase,表示大小写转换
+	charAt(),返回指定x位置的字符。注意：字符位置从0开始
+	charCodeAt(x)，返回指定x位置的字符的unicode编码
+	X.indexOf(str,[index]),查找指定位置的字符,找不到返回-1 str：查找的字符 index：从什么位置开始查找(没有默认从头开始查找)
+	替换字串 x.replace(str1，str2) str1:被替换的字串， str2：替换什么
+	截取字串 substring(start,[end]) start：开始位置 end：结束位置+1(包头不含尾)
+	常用方法 toFixed(n) : 将数字转换为字符串,n是保留的位数
+Array对象：
+	查看数组的长度 length
+	reverse() 数组的倒序
+	sort() 数组的排序
+Math对象
+	Math.random():生成一个[0,1)的随机数
+	sin() con() tan() 三角函数
+	sqrt()开方
+	abs()绝对值
+	Math.roud(x):对x进行四舍五入
+Date对象：
+	getTime();获取毫秒值。从1970-01-01 00:00:00 到此时此刻的毫秒值
+	setTime(value);设置毫秒值。
+	toLocaleDateString() 年月日
+	toLocaleTimeString() 时分秒
+	
+8.1
+arguments 对象的作用：
+是js定义函数中，一个默认的数组，传递函数如果没有定义数组，则默认arguments接收
+JavaScript 中常用的全局函数：
+	parseInt():解析一个字符串并返回一个整数
+	parseFloat():解析一个字符串并返回一个浮点数
+	String():把对象的值转换为字符串
+	unescape():对由escape()编码的字符串进行编码
+	eval():计算js字符串，并把它作为脚本代码来执行
+	escape():对字符串进行编码
+	isNaN():检查某个值是否是数字
+window常用方法和属性：
+	方法：
+		open打开一个新的窗口
+		close关闭浏览器
+		alert弹出框
+		confirm显示一个确认框
+		prompt显示一个输入框
+		setTimeout定时设置
+		clearTimeout取消定时设置
+	属性：
+		location给出当前窗口的url信息
+		history包含一个访问过页面的名称和数量
+		status给出浏览器窗口中状态栏当前显示信息
+		innerheight返回窗口中文档的像素高度
+		innerwidth返回窗口中文档的像素宽度
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周期性定时器</title>
+    <script>
+         /*
+            周期性定时器：按照一定的间隔事件，重复执行某些内容
+            setInterval(参数1，参数2);
+                参数1：要做的事件
+                参数2：表示间隔时间，单位是毫秒
+       */
+        /*
+            作用域：定义的变量作用范围是包围自己的一个大括号内
+        */
+
+    let stopId;
+        function start(){
+            let stopId = setInterval(f,1000);
+        }
+        function end(){
+            clearInterval(stopId);
+        }
+        function f(){
+            //1:获取input框
+            let k = document.getElementById("ik");
+            //2：获取时间
+            let time = new Date();
+            let sj = time.toLocaleDateString();
+            //3：将时间赋值给文本框
+            k.value = sj;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="ik"><br>
+    <input type="button" value="开始" onclick="start()">
+    <input type="button"value="暂停" onclick="end()">
+</body>
+</html>
+
+8.2
+1.
+screen对象：包含屏幕的信息
+history对象：包含用户访问过的URL
+location对象：有关当前浏览器信息
+event对象：记录各种状态发生信息
+2.
+setInterval是周期性定时器，每隔若干秒执行一次function
+setTimeout是一次性定时器，若干秒之后执行function
+3.
+根据ID查询节点：document.getElementById()
+根据层次查询节点：parentNode, childNodes
+根据标签名查询节点：getElementsByTagName()
+根据name查询节点：getElementsByName()
+
+8.7
+层次选择器：
+                1：后代选择器 $(select1 select2)
+                2：子选择器   $(select1 > select2)
+                3：选中下一个弟弟 $(select1 + select2)
+                4：选择所有的弟弟 $(select1 ~ select2) 注在版本jQuery2之前用
+基本过滤选择器：
+                xxx：first 选择第一个
+                xxx：last  选择最后一个
+                xxx：even 选择偶数个
+                xxx：odd 选择奇数个
+                xxx：eq(index) 选择下标等于index的
+                xxx：gt(index) 选择下标大于index的
+                xxx：lt(index) 选择下标小于index的
+                xxx：not(select) 选择排序select的所有
+内容过滤选择器：
+		：contains("xxx") 选择包含xxx内容的元素
+           	：empty 选择不含包子元素的元素 
+可见性过滤选择器：
+		：hidden 匹配所有不可见元素
+		：visible 陪陪所有不可见元素
+属性过滤选择器：
+		[attribute] 匹配具有attribute属性的元素
+		[attribute = value] 匹配属性等于value的元素
+		[attribute != value] 匹配属性不等于value的元素
+状态过滤选择器：
+		：enabled 匹配可用的元素
+		：disabled 匹配不可用的元素
+		：checked 匹配选中的checkbox
+		：selectd 匹配选中的option
+表单选择器：
+		：text 匹配文本框
+		：password 匹配密码框
+		：radio 匹配单选框
+		：checkbox 匹配多选框
+		：submit 匹配提交按钮
+		：button 匹配普通按钮
+		：file 匹配文件框
+		：hidden 匹配隐藏框
+
+8.8
+使用jQuery是需要引入jquery.js文件
+进行jQuery操作时，第一步是引入文件
+$符号封装的对象是jQuery对象 document.getElementById("XX")获取的是DOM对象
+
+
+
+
+
+
+css的三大特点：
+继承性、层叠性、优先级
+
+原生选择器优先级最低id原则器最高，类选择器
+如何定义变量用let和var，变量名的要求
+id选择器和类选择器区别：
+id优先级更高，类选择器能选择多个
+写一个函数实现任意数组的去重，去重之后形成一个新的数组
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
