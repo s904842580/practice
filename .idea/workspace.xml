@@ -1,7 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="92f3f0fd-d668-46d1-a400-83569f654b00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/artifacts/04_TomcatAPI_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/artifacts/04_TomcatAPI_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/artifacts/05_ServletRequest_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/artifacts/05_ServletRequest_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_80.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_80.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/libraries/mysql_connector_java_5_1_48.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/01_JDBC/01_JDBC.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/01_JDBC/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/01_JDBC/src/com/hhx/conn/FJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/01_JDBC/src/com/hhx/conn/SJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/02_Tomcat1/02_Tomcat1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/02_Tomcat1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/02_Tomcat1/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/02_Tomcat1/src/main/webapp/WEB-INF/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/02_Tomcat1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/03_tomcat/03_tomcat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/03_tomcat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/04_TomcatAPI/04_TomcatAPI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/04_TomcatAPI/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/04_TomcatAPI/src/main/java/com/hhx/service/APIServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/04_TomcatAPI/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/04_TomcatAPI/target/classes/com/hhx/service/APIServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/04_TomcatArchtectrue/04_TomcatArchtectrue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/05_ServletRequest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/src/main/java/com/hhx/service/ReqServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/target/05_ServletRequest-1.0-SNAPSHOT.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/target/05_ServletRequest-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/target/05_ServletRequest-1.0-SNAPSHOT/WEB-INF/classes/com/hhx/service/ReqServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/target/05_ServletRequest-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/05_ServletRequest/target/classes/com/hhx/service/ReqServlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/06_ServletDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/src/main/java/com/hhx/service/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/src/main/java/com/hhx/util/DBUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletDemo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/06_ServletResponse.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/06_ServletResponse/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/out/production/01_JDBC/com/hhx/conn/FJDBC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/out/production/01_JDBC/com/hhx/conn/SJDBC.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaServlet/src/main/03_tomcat/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/code/.idea/artifacts/mybatis_004_web_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/code/.idea/artifacts/mybatis_004_web_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/mybatis-004-web/mybatis-004-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/mybatis-004-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/mybatis-004-web/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/mybatis-004-web/src/main/webapp/WEB-INF/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis/mybatis-004-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/day01_eesy_01jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/src/main/java/com/sxy/jdbc/JdbcDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_01jdbc/target/classes/com/sxy/jdbc/JdbcDemo1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/day01_eesy_02factory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/src/main/java/com/sxy/dao/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/src/main/java/com/sxy/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/src/main/java/com/sxy/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/day01_eesy_02factory/src/main/java/com/sxy/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/code/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/code/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/code/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/code/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/code/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/code/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/code/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +123,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -41,24 +144,12 @@
       <option name="presentableId" value="Default" />
       <updated>1694134543196</updated>
       <workItem from="1694134548091" duration="46000" />
+      <workItem from="1696902739572" duration="42000" />
+      <workItem from="1697116058703" duration="1405000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="98" y="199" width="1038" height="625" key="#Project_Structure" timestamp="1694134564163">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="98" y="199" width="1038" height="625" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1694134564163" />
-    <state x="546" y="248" key="FileChooserDialogImpl" timestamp="1694134590872">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="546" y="248" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1694134590872" />
-    <state x="175" y="190" key="new project wizard" timestamp="1694134592497">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="175" y="190" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1694134592497" />
+    <option name="version" value="3" />
   </component>
 </project>

@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/../mybatis-001-introduct/mybatis-001-introduct.iml" filepath="$PROJECT_DIR$/../mybatis-001-introduct/mybatis-001-introduct.iml" />
       <module fileurl="file://$PROJECT_DIR$/../mybatis-002-crud/mybatis-002-crud.iml" filepath="$PROJECT_DIR$/../mybatis-002-crud/mybatis-002-crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/../mybatis-003-configguration/mybatis-003-configguration.iml" filepath="$PROJECT_DIR$/../mybatis-003-configguration/mybatis-003-configguration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mybatis-004-web/mybatis-004-web.iml" filepath="$PROJECT_DIR$/../mybatis-004-web/mybatis-004-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../parse-xml-by-dom4j/parse-xml-by-dom4j.iml" filepath="$PROJECT_DIR$/../parse-xml-by-dom4j/parse-xml-by-dom4j.iml" />
     </modules>
   </component>
